@@ -61,7 +61,7 @@ except:
 def get_name(file):
     # Read 0xFFFF bytes from the file
     with open(file, 'rb') as f:
-        data = f.read(0xFFFF)
+        data = f.read()
         KEY = b'tEXtTitle'
         OFFSET = len(KEY)+1
         index = data.find(KEY)
