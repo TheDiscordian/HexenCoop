@@ -59,7 +59,6 @@ except:
     None
 
 def get_name(file):
-    # Read 0xFFFF bytes from the file
     with open(file, 'rb') as f:
         data = f.read()
         KEY = b'tEXtTitle'
